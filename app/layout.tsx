@@ -1,6 +1,13 @@
 import type { ReactNode } from "react";
+import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
+
+export const metadata: Metadata = {
+  icons: {
+    icon: "/images/logo/favicon.PNG",
+  },
+};
 
 const fraunces = Fraunces({
   subsets: ["latin", "latin-ext"],
