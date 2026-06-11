@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 interface Props {
   eyebrow: string;
+  name: string;
   headline: string;
   subline: string;
   ctaPrimary: string;
@@ -25,6 +26,7 @@ const variants: Variants = {
 
 export default function HeroSection({
   eyebrow,
+  name,
   headline,
   subline,
   ctaPrimary,
@@ -45,15 +47,20 @@ export default function HeroSection({
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
         <div className="max-w-3xl">
-          <motion.span
+          <motion.div
             custom={0}
             initial="hidden"
             animate="visible"
             variants={variants}
-            className="font-body text-xs font-semibold uppercase tracking-widest text-brand-teal-deep block mb-5"
+            className="mb-5"
           >
-            {eyebrow}
-          </motion.span>
+            <span className="font-body text-xs font-semibold uppercase tracking-widest text-brand-teal-deep block">
+              {eyebrow}
+            </span>
+            <span className="font-display text-brand-teal-deep text-lg block mt-0.5">
+              {name}
+            </span>
+          </motion.div>
 
           <motion.h1
             custom={1}

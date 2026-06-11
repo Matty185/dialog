@@ -34,6 +34,7 @@ export default function HomePage() {
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <HeroSection
         eyebrow={t("hero.eyebrow")}
+        name={practitioner.name}
         headline={t("hero.headline")}
         subline={t("hero.subline")}
         ctaPrimary={t("hero.cta_primary")}
