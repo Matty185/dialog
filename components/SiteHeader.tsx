@@ -57,15 +57,15 @@ export default function SiteHeader({ pathname }: { pathname: string }) {
           : "bg-transparent"
       )}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href={locale === "pl" ? "/" : "/en"} className="flex items-center gap-3 shrink-0">
           <Image
             src="/images/logo/dialog-logo.png"
             alt="Dialog Family Therapy Centre"
-            width={120}
-            height={48}
-            className="h-10 w-auto"
+            width={160}
+            height={64}
+            className="h-14 w-auto"
             priority
           />
         </Link>
@@ -76,7 +76,7 @@ export default function SiteHeader({ pathname }: { pathname: string }) {
             <Link
               key={l.href}
               href={l.href}
-              className="font-body text-sm text-brand-ink hover:text-brand-teal-deep transition-colors"
+              className="font-body text-base text-brand-ink hover:text-brand-teal-deep transition-colors"
             >
               {l.label}
             </Link>
