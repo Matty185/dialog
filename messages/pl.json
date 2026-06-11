@@ -29,6 +29,13 @@
     "centre": "KCP Kraków",
     "location": "Dublin 7"
   },
+  "impact": {
+    "quote": "Zmiana jest możliwa — nawet jeśli teraz trudno w to uwierzyć.",
+    "quote_sub": "Psychoterapia to bezpieczna przestrzeń, w której możesz przepracować trudności i odkryć, jak żyć pełniej.",
+    "stat": "75%",
+    "stat_body": "osób, które podjęły psychoterapię, doświadcza znaczącej i trwałej poprawy dobrostanu.",
+    "stat_source": "Źródło: American Psychological Association"
+  },
   "approach": {
     "eyebrow": "Podejście",
     "heading": "Dialog zaczyna się od słuchania",

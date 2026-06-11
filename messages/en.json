@@ -29,6 +29,13 @@
     "centre": "KCP Kraków",
     "location": "Dublin 7"
   },
+  "impact": {
+    "quote": "Change is possible — even when it's hard to believe right now.",
+    "quote_sub": "Psychotherapy is a safe space where you can work through difficulties and discover how to live more fully.",
+    "stat": "75%",
+    "stat_body": "of people who begin psychotherapy experience significant, lasting improvement in their wellbeing.",
+    "stat_source": "Source: American Psychological Association"
+  },
   "approach": {
     "eyebrow": "Approach",
     "heading": "Every dialogue begins with listening",

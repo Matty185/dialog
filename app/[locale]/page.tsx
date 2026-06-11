@@ -104,24 +104,41 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Credentials strip ─────────────────────────────────────────────── */}
-      <section className="bg-brand-teal-deep py-10">
+      {/* ── Impact strip ──────────────────────────────────────────────────── */}
+      <section className="bg-gradient-to-br from-brand-teal-deep to-brand-ink py-20 md:py-28 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MotionReveal>
-            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-white/80 font-body text-sm">
-              {[
-                t("credentials.experience"),
-                t("credentials.university"),
-                t("credentials.centre"),
-                t("credentials.location"),
-              ].map((item, i) => (
-                <span key={i} className="flex items-center gap-3">
-                  {i > 0 && <span className="hidden sm:block w-px h-3 bg-white/30" />}
-                  {item}
-                </span>
-              ))}
-            </div>
-          </MotionReveal>
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1px_1fr] items-center gap-12 lg:gap-0">
+
+            {/* Quote */}
+            <MotionReveal className="relative lg:pr-16">
+              <span className="absolute -top-4 -left-2 font-display leading-none text-white/[0.07] select-none pointer-events-none" style={{ fontSize: "clamp(6rem,14vw,10rem)" }}>
+                &ldquo;
+              </span>
+              <blockquote className="relative font-display text-2xl md:text-3xl text-white leading-relaxed mb-5">
+                {t("impact.quote")}
+              </blockquote>
+              <p className="font-body text-white/60 text-base leading-relaxed">
+                {t("impact.quote_sub")}
+              </p>
+            </MotionReveal>
+
+            {/* Vertical divider */}
+            <div className="hidden lg:block h-44 bg-white/15" />
+
+            {/* Stat */}
+            <MotionReveal delay={0.18} className="lg:pl-16">
+              <p className="font-display text-brand-mint leading-none mb-4" style={{ fontSize: "clamp(5rem,12vw,8rem)" }}>
+                {t("impact.stat")}
+              </p>
+              <p className="font-body text-white/70 text-lg leading-relaxed mb-3">
+                {t("impact.stat_body")}
+              </p>
+              <p className="font-body text-xs text-white/35 uppercase tracking-wide">
+                {t("impact.stat_source")}
+              </p>
+            </MotionReveal>
+
+          </div>
         </div>
       </section>
 
