@@ -1,26 +1,12 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/i18n/config";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import HtmlLang from "@/components/HtmlLang";
 import { headers } from "next/headers";
-import "../globals.css";
-
-const fraunces = Fraunces({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-fraunces",
-  display: "swap",
-  axes: ["opsz", "SOFT", "WONK"],
-});
-
-const inter = Inter({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-inter",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -52,14 +38,11 @@ export default async function LocaleLayout({
   const pathname = headersList.get("x-pathname") ?? "/";
 
   return (
-    <html lang={locale === "pl" ? "pl-IE" : "en-IE"} className={`${fraunces.variable} ${inter.variable}`}>
-      <body className="bg-brand-cream text-brand-ink font-body antialiased">
-        <NextIntlClientProvider messages={messages}>
-          <SiteHeader pathname={pathname} />
-          <main>{children}</main>
-          <SiteFooter />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <HtmlLang locale={locale} />
+      <SiteHeader pathname={pathname} />
+      <main>{children}</main>
+      <SiteFooter />
+    </NextIntlClientProvider>
   );
 }
