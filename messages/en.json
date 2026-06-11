@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "resources": "Resources",
+    "contact": "Contact",
+    "book": "Book a session"
+  },
+  "hero": {
+    "eyebrow": "Dialog Family Therapy Centre",
+    "headline": "Polish psychotherapy in Dublin",
+    "subline": "23 years of experience. Working with adults, children, couples and families.",
+    "cta_primary": "Book a session",
+    "cta_secondary": "About me"
+  },
+  "intro": {
+    "body": "I am a psychologist and psychotherapist. For 23 years I have supported adults, children, couples and families through difficult moments in life. I work in Polish, in Dublin and online.",
+    "cta": "More about me"
+  },
+  "services_section": {
+    "eyebrow": "Services",
+    "heading": "How I can help",
+    "view_all": "View all services"
+  },
+  "credentials": {
+    "experience": "23 years of experience",
+    "university": "SWPS Warsaw",
+    "centre": "KCP Kraków",
+    "location": "Dublin 7"
+  },
+  "approach": {
+    "eyebrow": "Approach",
+    "heading": "Every dialogue begins with listening",
+    "p1": "I work within the psychodynamic tradition — an approach based on the understanding that what we experience today has its roots in the past. Together we examine these connections to understand where difficulties come from and how to work through them.",
+    "p2": "Therapy is not ready-made prescriptions or quick fixes. It is a space where you can speak about what matters — without judgement, at your own pace. My role is to accompany you in this work with attentiveness and respect.",
+    "p3": "The name 'Dialog' is not accidental. I believe that change begins with conversation — with a therapist, with those close to us, but above all with oneself.",
+    "todo": "TODO_CLIENT: Text to be approved by client."
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "heading": "What people say",
+    "placeholder_note": "Placeholder — testimonials will be added."
+  },
+  "final_cta": {
+    "eyebrow": "Contact",
+    "heading": "The first step is often the hardest",
+    "body": "Reach out when you're ready. I'll respond within 24 hours.",
+    "button": "Book a session"
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "Sylwia Matijuk",
+    "role": "Psychologist · Psychotherapist · Educator",
+    "bio_placeholder": "TODO_CLIENT: Bio to be provided in English (or professionally translated from Polish).\n\nI am a psychologist and psychotherapist with 23 years of clinical experience. I graduated in psychology from SWPS University in Warsaw, then completed a five-year adult psychotherapy school and a two-year child and adolescent psychotherapy school at the Kraków Psychodynamic Centre.\n\nI work with adults, children, adolescents, couples and families. I specialise in psychodynamic psychotherapy — an approach that helps understand how past experiences shape the present.\n\nI have run a private practice in Dublin for many years, where I am available to Polish-speaking patients living in Ireland.",
+    "approach_heading": "My approach",
+    "approach_placeholder": "TODO_CLIENT: A few sentences about your approach to therapy.",
+    "pullquote": "Every dialogue begins with listening.",
+    "credentials_heading": "Education & qualifications",
+    "experience_label": "years of experience"
+  },
+  "services_page": {
+    "eyebrow": "Services",
+    "heading": "Therapeutic services",
+    "pricing_note": "Sessions: €80–€120, depending on format and duration.",
+    "format_label": "Format",
+    "desc_placeholder": "TODO_CLIENT: Service description to be completed."
+  },
+  "resources_page": {
+    "eyebrow": "Resources",
+    "heading": "Resources & FAQ",
+    "intro": "Materials to help you understand whether psychotherapy might be for you, and answers to the most common questions.",
+    "read_more": "Read more",
+    "coming_soon": "Article coming soon"
+  },
+  "contact_page": {
+    "eyebrow": "Contact",
+    "heading": "Book a session",
+    "booking_note": "Online booking coming soon. For now, fill in the form — I'll respond within 24 hours.",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_phone": "Phone (optional)",
+    "form_contact": "Preferred contact method",
+    "form_contact_email": "Email",
+    "form_contact_phone": "Phone",
+    "form_contact_whatsapp": "WhatsApp",
+    "form_message": "Message",
+    "form_submit": "Send message",
+    "form_submitting": "Sending…",
+    "form_success_heading": "Message sent",
+    "form_success_body": "I'll be in touch within 24 hours. Thank you for reaching out.",
+    "form_name_placeholder": "Your name",
+    "form_email_placeholder": "your@email.com",
+    "form_phone_placeholder": "+353 ...",
+    "form_message_placeholder": "Tell me what you're looking for or how I can help...",
+    "details_heading": "Contact details",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "address_label": "Address",
+    "hours_label": "Consultation hours",
+    "map_heading": "How to find us"
+  },
+  "footer": {
+    "tagline": "Polish psychotherapy in Dublin.",
+    "nav_heading": "Pages",
+    "contact_heading": "Contact",
+    "credit": "Dialog Family Therapy Centre"
+  },
+  "lang_toggle": {
+    "switch_to": "PL"
+  },
+  "not_found": {
+    "heading": "Page not found",
+    "body": "Sorry, this page could not be found.",
+    "back": "Back to home"
+  }
+}

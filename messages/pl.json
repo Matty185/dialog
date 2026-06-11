@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "services": "Usługi",
+    "resources": "Zasoby",
+    "contact": "Kontakt",
+    "book": "Umów wizytę"
+  },
+  "hero": {
+    "eyebrow": "Dialog Family Therapy Centre",
+    "headline": "Psychoterapia po polsku w Dublinie",
+    "subline": "23 lata doświadczenia. Pracuję z dorosłymi, dziećmi, parami i rodzinami.",
+    "cta_primary": "Umów wizytę",
+    "cta_secondary": "Poznaj mnie"
+  },
+  "intro": {
+    "body": "Jestem psychologiem i psychoterapeutą. Od 23 lat towarzyszę dorosłym, dzieciom, parom i rodzinom w trudnych momentach życia. Pracuję po polsku, w Dublinie i online.",
+    "cta": "Więcej o mnie"
+  },
+  "services_section": {
+    "eyebrow": "Usługi",
+    "heading": "Jak mogę pomóc",
+    "view_all": "Zobacz wszystkie usługi"
+  },
+  "credentials": {
+    "experience": "23 lata doświadczenia",
+    "university": "SWPS Warszawa",
+    "centre": "KCP Kraków",
+    "location": "Dublin 7"
+  },
+  "approach": {
+    "eyebrow": "Podejście",
+    "heading": "Dialog zaczyna się od słuchania",
+    "p1": "Pracuję w nurcie psychodynamicznym — podejściu, które zakłada, że to, czego doświadczamy dzisiaj, ma swoje korzenie w przeszłości. Razem przyglądamy się tym połączeniom, by zrozumieć, skąd biorą się trudności i jak je przepracować.",
+    "p2": "Terapia to nie gotowe recepty ani szybkie rozwiązania. To przestrzeń, w której możesz mówić o tym, co ważne — bez oceniania, w swoim własnym tempie. Moim zadaniem jest towarzyszyć Ci w tej pracy z uważnością i szacunkiem.",
+    "p3": "Nazwa «Dialog» nie jest przypadkowa. Wierzę, że zmiana zaczyna się od rozmowy — z terapeutą, z bliskimi, ale przede wszystkim ze sobą samym.",
+    "todo": "TODO_CLIENT: Tekst do zatwierdzenia przez klientkę."
+  },
+  "testimonials": {
+    "eyebrow": "Opinie",
+    "heading": "Co mówią pacjenci",
+    "placeholder_note": "Placeholder — opinie zostaną uzupełnione."
+  },
+  "final_cta": {
+    "eyebrow": "Kontakt",
+    "heading": "Pierwszy krok bywa najtrudniejszy",
+    "body": "Napisz, kiedy będziesz gotowa. Odpowiem w ciągu 24 godzin.",
+    "button": "Umów wizytę"
+  },
+  "about": {
+    "eyebrow": "O mnie",
+    "heading": "Sylwia Matijuk",
+    "role": "Psycholog · Psychoterapeuta · Pedagog",
+    "bio_placeholder": "TODO_CLIENT: Sylwia — tutaj Twoja biografia. Poniżej przykładowy tekst zastępczy, aby pokazać układ strony.\n\nJestem psychologiem i psychoterapeutą z 23-letnim doświadczeniem klinicznym. Ukończyłam psychologię na Uniwersytecie SWPS w Warszawie, a następnie pięcioletnią szkołę psychoterapii dorosłych oraz dwuletnią szkołę psychoterapii dzieci i młodzieży w Krakowskim Centrum Psychodynamicznym.\n\nPracuję z dorosłymi, dziećmi, młodzieżą, parami i rodzinami. Specjalizuję się w psychoterapii psychodynamicznej — podejściu, które pomaga zrozumieć, jak nasze przeszłe doświadczenia wpływają na teraźniejszość.\n\nOd lat prowadzę prywatną praktykę w Dublinie, gdzie jestem do dyspozycji polskojęzycznych pacjentów mieszkających w Irlandii.",
+    "approach_heading": "Moje podejście",
+    "approach_placeholder": "TODO_CLIENT: Kilka zdań o Twoim podejściu do terapii.",
+    "pullquote": "Każdy dialog zaczyna się od słuchania.",
+    "credentials_heading": "Wykształcenie i kwalifikacje",
+    "experience_label": "lat doświadczenia"
+  },
+  "services_page": {
+    "eyebrow": "Usługi",
+    "heading": "Usługi terapeutyczne",
+    "pricing_note": "Sesje: €80–€120, w zależności od formy i czasu trwania.",
+    "format_label": "Forma",
+    "desc_placeholder": "TODO_CLIENT: Opis usługi do uzupełnienia."
+  },
+  "resources_page": {
+    "eyebrow": "Zasoby",
+    "heading": "Materiały i FAQ",
+    "intro": "Materiały, które mogą pomóc Ci zorientować się, czy psychoterapia jest dla Ciebie, oraz odpowiedzi na najczęstsze pytania.",
+    "read_more": "Czytaj więcej",
+    "coming_soon": "Artykuł wkrótce"
+  },
+  "contact_page": {
+    "eyebrow": "Kontakt",
+    "heading": "Umów wizytę",
+    "booking_note": "Wkrótce dostępna będzie online rezerwacja wizyt. Na razie wypełnij formularz — odezwę się w ciągu 24 godzin.",
+    "form_name": "Imię",
+    "form_email": "E-mail",
+    "form_phone": "Telefon (opcjonalnie)",
+    "form_contact": "Preferowana forma kontaktu",
+    "form_contact_email": "E-mail",
+    "form_contact_phone": "Telefon",
+    "form_contact_whatsapp": "WhatsApp",
+    "form_message": "Wiadomość",
+    "form_submit": "Wyślij wiadomość",
+    "form_submitting": "Wysyłanie…",
+    "form_success_heading": "Wiadomość wysłana",
+    "form_success_body": "Odezwę się w ciągu 24 godzin. Dziękuję za zaufanie.",
+    "form_name_placeholder": "Twoje imię",
+    "form_email_placeholder": "twoj@email.com",
+    "form_phone_placeholder": "+353 ...",
+    "form_message_placeholder": "Napisz, czego szukasz lub jak mogę pomóc...",
+    "details_heading": "Dane kontaktowe",
+    "phone_label": "Telefon",
+    "email_label": "E-mail",
+    "address_label": "Adres",
+    "hours_label": "Godziny przyjęć",
+    "map_heading": "Jak do nas dotrzeć"
+  },
+  "footer": {
+    "tagline": "Psychoterapia po polsku w Dublinie.",
+    "nav_heading": "Strony",
+    "contact_heading": "Kontakt",
+    "credit": "Dialog Family Therapy Centre"
+  },
+  "lang_toggle": {
+    "switch_to": "EN"
+  },
+  "not_found": {
+    "heading": "Strona nie istnieje",
+    "body": "Przepraszamy, ta strona nie została znaleziona.",
+    "back": "Wróć na stronę główną"
+  }
+}

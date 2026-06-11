@@ -9,8 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: {
+          teal: "#28A0B1",
+          "teal-deep": "#1C6E73",
+          mint: "#BCE2D9",
+          cream: "#FBFAF7",
+          paper: "#FFFFFF",
+          ink: "#1A2630",
+          muted: "#6B7785",
+          border: "#E5E7EB",
+        },
+      },
+      fontFamily: {
+        display: ["var(--font-fraunces)", "Georgia", "serif"],
+        body: ["var(--font-inter)", "system-ui", "sans-serif"],
+      },
+      borderRadius: {
+        sm: "8px",
+        md: "14px",
+        lg: "24px",
       },
     },
   },
