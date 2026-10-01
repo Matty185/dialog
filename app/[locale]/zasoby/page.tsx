@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations, useLocale } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import MotionReveal from "@/components/MotionReveal";
 import { resources } from "@/content/siteData";
 import { ArrowRight } from "lucide-react";
@@ -20,7 +20,12 @@ export async function generateMetadata({
   };
 }
 
-export default function ResourcesPage() {
+export default function ResourcesPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  setRequestLocale(params.locale);
   const t = useTranslations("resources_page");
   const locale = useLocale();
 

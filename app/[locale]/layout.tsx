@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/i18n/config";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import HtmlLang from "@/components/HtmlLang";
-import { headers } from "next/headers";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -32,15 +31,14 @@ export default async function LocaleLayout({
   params: { locale: string };
 }) {
   if (!locales.includes(locale as Locale)) notFound();
+  setRequestLocale(locale);
 
   const messages = await getMessages();
-  const headersList = headers();
-  const pathname = headersList.get("x-pathname") ?? "/";
 
   return (
     <NextIntlClientProvider messages={messages}>
       <HtmlLang locale={locale} />
-      <SiteHeader pathname={pathname} />
+      <SiteHeader />
       <main>{children}</main>
       <SiteFooter />
     </NextIntlClientProvider>

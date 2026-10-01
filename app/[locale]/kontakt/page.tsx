@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations, useLocale } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import MotionReveal from "@/components/MotionReveal";
 import ContactForm from "@/components/ContactForm";
 import { practitioner } from "@/content/siteData";
@@ -21,7 +21,12 @@ export async function generateMetadata({
   };
 }
 
-export default function ContactPage() {
+export default function ContactPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  setRequestLocale(params.locale);
   const t = useTranslations("contact_page");
   const locale = useLocale();
 

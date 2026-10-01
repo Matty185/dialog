@@ -1,5 +1,6 @@
 import { useTranslations, useLocale } from "next-intl";
-import Link from "next/link";
+import { setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 import MotionReveal from "@/components/MotionReveal";
 import PlaceholderSilhouette from "@/components/PlaceholderSilhouette";
@@ -17,13 +18,18 @@ const featuredServiceIds = [
   "codependency",
 ];
 
-export default function HomePage() {
+export default function HomePage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  setRequestLocale(params.locale);
   const t = useTranslations();
   const locale = useLocale();
 
-  const contactHref = locale === "pl" ? "/kontakt" : "/en/contact";
-  const aboutHref = locale === "pl" ? "/o-mnie" : "/en/about";
-  const servicesHref = locale === "pl" ? "/uslugi" : "/en/services";
+  const contactHref = "/kontakt";
+  const aboutHref = "/o-mnie";
+  const servicesHref = "/uslugi";
 
   const featuredServices = featuredServiceIds
     .map((id) => services.find((s) => s.id === id))

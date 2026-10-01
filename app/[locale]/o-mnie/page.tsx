@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations, useLocale } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import MotionReveal from "@/components/MotionReveal";
 import PlaceholderSilhouette from "@/components/PlaceholderSilhouette";
 import { practitioner } from "@/content/siteData";
@@ -20,7 +20,12 @@ export async function generateMetadata({
   };
 }
 
-export default function AboutPage() {
+export default function AboutPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  setRequestLocale(params.locale);
   const t = useTranslations("about");
   const locale = useLocale();
 

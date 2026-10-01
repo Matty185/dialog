@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import type { ComponentProps } from "react";
+import { Link } from "@/i18n/navigation";
 import { motion, type Variants } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
@@ -11,8 +12,8 @@ interface Props {
   subline: string;
   ctaPrimary: string;
   ctaSecondary: string;
-  ctaPrimaryHref: string;
-  ctaSecondaryHref: string;
+  ctaPrimaryHref: ComponentProps<typeof Link>["href"];
+  ctaSecondaryHref: ComponentProps<typeof Link>["href"];
 }
 
 const variants: Variants = {

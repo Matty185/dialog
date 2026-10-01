@@ -1,36 +1,24 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link, usePathname } from "@/i18n/navigation";
 
 const navLinks = [
-  { key: "about", href_pl: "/o-mnie", href_en: "/en/about" },
-  { key: "services", href_pl: "/uslugi", href_en: "/en/services" },
-  { key: "resources", href_pl: "/zasoby", href_en: "/en/resources" },
-  { key: "contact", href_pl: "/kontakt", href_en: "/en/contact" },
-];
+  { key: "about", href: "/o-mnie" },
+  { key: "services", href: "/uslugi" },
+  { key: "resources", href: "/zasoby" },
+  { key: "contact", href: "/kontakt" },
+] as const;
 
-const routeMap: Record<string, Record<string, string>> = {
-  "/": { en: "/en" },
-  "/o-mnie": { en: "/en/about" },
-  "/uslugi": { en: "/en/services" },
-  "/zasoby": { en: "/en/resources" },
-  "/kontakt": { en: "/en/contact" },
-  "/en": { pl: "/" },
-  "/en/about": { pl: "/o-mnie" },
-  "/en/services": { pl: "/uslugi" },
-  "/en/resources": { pl: "/zasoby" },
-  "/en/contact": { pl: "/kontakt" },
-};
-
-export default function SiteHeader({ pathname }: { pathname: string }) {
+export default function SiteHeader() {
   const t = useTranslations("nav");
   const tLang = useTranslations("lang_toggle");
   const locale = useLocale();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -41,11 +29,10 @@ export default function SiteHeader({ pathname }: { pathname: string }) {
   }, []);
 
   const oppositeLocale = locale === "pl" ? "en" : "pl";
-  const langHref = routeMap[pathname]?.[oppositeLocale] ?? (locale === "pl" ? "/en" : "/");
 
   const links = navLinks.map((l) => ({
-    label: t(l.key as "about" | "services" | "resources" | "contact"),
-    href: locale === "pl" ? l.href_pl : l.href_en,
+    label: t(l.key),
+    href: l.href,
   }));
 
   return (
@@ -59,7 +46,7 @@ export default function SiteHeader({ pathname }: { pathname: string }) {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link href={locale === "pl" ? "/" : "/en"} className="flex items-center gap-3 shrink-0">
+        <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
             src="/images/logo/dialog-logo.png"
             alt="Dialog Family Therapy Centre"
@@ -82,13 +69,14 @@ export default function SiteHeader({ pathname }: { pathname: string }) {
             </Link>
           ))}
           <Link
-            href={langHref}
+            href={pathname}
+            locale={oppositeLocale}
             className="font-body text-xs font-semibold text-brand-muted hover:text-brand-teal-deep border border-brand-border rounded-sm px-2.5 py-1 transition-colors"
           >
             {tLang("switch_to")}
           </Link>
           <Link
-            href={locale === "pl" ? "/kontakt" : "/en/contact"}
+            href="/kontakt"
             className="bg-brand-teal-deep text-white font-body text-sm font-medium px-5 py-2 rounded-md hover:bg-brand-teal transition-colors"
           >
             {t("book")}
@@ -120,14 +108,15 @@ export default function SiteHeader({ pathname }: { pathname: string }) {
           ))}
           <div className="flex items-center gap-3 pt-2 border-t border-brand-border">
             <Link
-              href={locale === "pl" ? "/kontakt" : "/en/contact"}
+              href="/kontakt"
               className="bg-brand-teal-deep text-white font-body text-sm font-medium px-5 py-2.5 rounded-md hover:bg-brand-teal transition-colors"
               onClick={() => setOpen(false)}
             >
               {t("book")}
             </Link>
             <Link
-              href={langHref}
+              href={pathname}
+            locale={oppositeLocale}
               className="font-body text-xs font-semibold text-brand-muted border border-brand-border rounded-sm px-2.5 py-1.5"
               onClick={() => setOpen(false)}
             >

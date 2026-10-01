@@ -1,24 +1,23 @@
-import Link from "next/link";
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { practitioner } from "@/content/siteData";
+import { Link } from "@/i18n/navigation";
 
 const navLinks = [
-  { key: "about", href_pl: "/o-mnie", href_en: "/en/about" },
-  { key: "services", href_pl: "/uslugi", href_en: "/en/services" },
-  { key: "resources", href_pl: "/zasoby", href_en: "/en/resources" },
-  { key: "contact", href_pl: "/kontakt", href_en: "/en/contact" },
-];
+  { key: "about", href: "/o-mnie" },
+  { key: "services", href: "/uslugi" },
+  { key: "resources", href: "/zasoby" },
+  { key: "contact", href: "/kontakt" },
+] as const;
 
 export default function SiteFooter() {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
-  const locale = useLocale();
 
   const links = navLinks.map((l) => ({
-    label: tNav(l.key as "about" | "services" | "resources" | "contact"),
-    href: locale === "pl" ? l.href_pl : l.href_en,
+    label: tNav(l.key),
+    href: l.href,
   }));
 
   return (
