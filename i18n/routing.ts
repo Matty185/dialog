@@ -6,6 +6,9 @@ export const routing = defineRouting({
   locales,
   defaultLocale,
   localePrefix: "as-needed", // PL has no prefix, EN gets /en
+  // Always serve Polish at unprefixed URLs, whatever the browser language;
+  // English is only reached via /en (the PL/EN toggle).
+  localeDetection: false,
   pathnames: {
     "/": "/",
     "/o-mnie": { pl: "/o-mnie", en: "/about" },
